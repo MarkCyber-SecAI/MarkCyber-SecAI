@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://markcyber.ca">
-    <img src="./assets/banner.svg" alt="MarkCyber — Security engineering, amplified by AI. Something is cooking in the lab." width="100%">
+    <img src="./assets/banner.svg" alt="MarkCyber: security engineering, amplified by AI. Something is cooking in the lab." width="100%">
   </a>
 </p>
 
@@ -11,10 +11,11 @@
   Repos are private while we sharpen the edges — the doors open soon.
 </p>
 
+<!-- Status and Focus sit in <picture> so GitHub does not wrap them in a link to the image. -->
 <p align="center">
-  <img alt="Status" src="https://img.shields.io/badge/status-in%20the%20lab-34f5c5?style=for-the-badge&labelColor=0a1322">
-  <img alt="Focus" src="https://img.shields.io/badge/focus-security%20%C3%97%20AI-4cc9ff?style=for-the-badge&labelColor=0a1322">
-  <a href="https://markcyber.ca"><img alt="Website" src="https://img.shields.io/badge/markcyber.ca-visit-a78bfa?style=for-the-badge&labelColor=0a1322"></a>
+  <picture><img alt="Status: in the lab" src="https://img.shields.io/badge/status-in%20the%20lab-3a3a3a?style=for-the-badge&labelColor=0e0e0e&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGNpcmNsZSBjeD0iOCIgY3k9IjgiIHI9IjQuNSIgZmlsbD0iI2ZiNDYxNyIvPjwvc3ZnPg=="></picture>
+  <picture><img alt="Focus: security × AI" src="https://img.shields.io/badge/focus-security%20%C3%97%20AI-3a3a3a?style=for-the-badge&labelColor=0e0e0e"></picture>
+  <a href="https://markcyber.ca"><img alt="Website: markcyber.ca" src="https://img.shields.io/badge/markcyber.ca-visit-c9360b?style=for-the-badge&labelColor=0e0e0e&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTMyIDQgOCAxM3YxN2MwIDE1IDEwIDI2IDI0IDMwIDE0LTQgMjQtMTUgMjQtMzBWMTN6IiBmaWxsPSIjZmI0NjE3Ii8+PHBhdGggZD0iTTIyIDQwVjI0bDEwIDEwIDEwLTEwdjE2IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=="></a>
 </p>
 
 ---

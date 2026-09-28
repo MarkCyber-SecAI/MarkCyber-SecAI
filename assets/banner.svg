@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="MarkCyber — Security x AI. Something is cooking in the lab.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#04060c"/>
+      <stop offset="0.55" stop-color="#0a1322"/>
+      <stop offset="1" stop-color="#120a1f"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34f5c5"/>
+      <stop offset="0.5" stop-color="#4cc9ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#34f5c5" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#34f5c5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34f5c5" stop-opacity="0"/>
+      <stop offset="1" stop-color="#34f5c5" stop-opacity="0.55"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#4cc9ff" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <clipPath id="frame"><rect width="1200" height="380" rx="18"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .sans { font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .grid { animation: drift 12s linear infinite; }
+    @keyframes drift { from { transform: translate(0,0); } to { transform: translate(40px,40px); } }
+    .sweep { transform-origin: 960px 190px; animation: spin 5s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .ping { transform-box: fill-box; transform-origin: center; animation: ping 2.6s ease-out infinite; }
+    .ping.d2 { animation-delay: .9s; } .ping.d3 { animation-delay: 1.7s; }
+    @keyframes ping { 0% { opacity: 0; transform: scale(.4);} 15% { opacity: 1; } 100% { opacity: 0; transform: scale(2.4);} }
+    .blip { animation: blip 2.6s ease-in-out infinite; } .blip.d2 { animation-delay: .9s; } .blip.d3 { animation-delay: 1.7s; }
+    @keyframes blip { 0%,100% { opacity: .25; } 20% { opacity: 1; } }
+    .glow { animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: .6; } 50% { opacity: 1; } }
+    .type { clip-path: inset(0 100% 0 0); animation: type 7s steps(34) infinite; }
+    @keyframes type { 0% { clip-path: inset(0 100% 0 0);} 45%,85% { clip-path: inset(0 0 0 0);} 100% { clip-path: inset(0 100% 0 0);} }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .dot { animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+    .scan { animation: scan 4.5s linear infinite; }
+    @keyframes scan { from { transform: translateY(-40px);} to { transform: translateY(420px);} }
+    .steam { animation: rise 3.2s ease-in infinite; opacity: 0; }
+    .steam.s2 { animation-delay: 1s; } .steam.s3 { animation-delay: 2s; }
+    @keyframes rise { 0% { opacity: 0; transform: translateY(8px);} 30% { opacity: .8; } 100% { opacity: 0; transform: translateY(-26px);} }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="380" fill="url(#bg)"/>
+    <g class="grid"><rect x="-40" y="-40" width="1280" height="460" fill="url(#grid)"/></g>
+    <circle class="glow" cx="200" cy="80" r="260" fill="url(#glowA)"/>
+    <circle class="glow" cx="1040" cy="330" r="280" fill="url(#glowB)" style="animation-delay:3s"/>
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="#34f5c5" opacity="0.18"/>
+
+    <!-- radar -->
+    <g>
+      <circle cx="960" cy="190" r="130" fill="none" stroke="#34f5c5" stroke-opacity=".25"/>
+      <circle cx="960" cy="190" r="90" fill="none" stroke="#34f5c5" stroke-opacity=".2"/>
+      <circle cx="960" cy="190" r="50" fill="none" stroke="#34f5c5" stroke-opacity=".18"/>
+      <path d="M830 190H1090M960 60V320" stroke="#34f5c5" stroke-opacity=".15"/>
+      <g class="sweep"><path d="M960 190 L1090 190 A130 130 0 0 0 1052 98 Z" fill="url(#sweep)" opacity=".7"/></g>
+      <circle class="blip" cx="1010" cy="140" r="4" fill="#34f5c5"/>
+      <circle class="ping" cx="1010" cy="140" r="6" fill="none" stroke="#34f5c5"/>
+      <circle class="blip d2" cx="905" cy="235" r="4" fill="#4cc9ff"/>
+      <circle class="ping d2" cx="905" cy="235" r="6" fill="none" stroke="#4cc9ff"/>
+      <circle class="blip d3" cx="1030" cy="250" r="4" fill="#a78bfa"/>
+      <circle class="ping d3" cx="1030" cy="250" r="6" fill="none" stroke="#a78bfa"/>
+      <circle cx="960" cy="190" r="4" fill="#e6fffa"/>
+    </g>
+
+    <!-- status pill -->
+    <g transform="translate(72 64)">
+      <rect width="228" height="34" rx="17" fill="#34f5c5" fill-opacity=".08" stroke="#34f5c5" stroke-opacity=".45"/>
+      <circle class="dot" cx="22" cy="17" r="5" fill="#34f5c5"/>
+      <text x="38" y="22" class="mono" font-size="13" letter-spacing="2" fill="#bff9ea">STATUS · IN THE LAB</text>
+    </g>
+
+    <!-- wordmark -->
+    <text x="68" y="182" class="sans" font-size="84" font-weight="800" letter-spacing="-2" fill="url(#word)" filter="url(#blur)" opacity=".55">MarkCyber</text>
+    <text x="68" y="182" class="sans" font-size="84" font-weight="800" letter-spacing="-2" fill="url(#word)">MarkCyber</text>
+    <text x="72" y="222" class="sans" font-size="22" font-weight="500" fill="#c9d4e5">Security engineering, amplified by AI.</text>
+
+    <!-- terminal line -->
+    <g transform="translate(72 262)">
+      <rect width="420" height="52" rx="10" fill="#060a12" stroke="#1e2a3d"/>
+      <text x="18" y="33" class="mono" font-size="17" fill="#34f5c5">$</text>
+      <g class="type"><text x="38" y="33" class="mono" font-size="17" fill="#e2e8f0">./cook --secret-recipe --stealth</text></g>
+      <rect class="cursor" x="372" y="17" width="10" height="20" fill="#34f5c5"/>
+      <!-- steam -->
+      <g transform="translate(440 0)" stroke="#a78bfa" stroke-width="2" fill="none" stroke-linecap="round">
+        <path class="steam" d="M6 40 q-6 -8 0 -16 q6 -8 0 -16"/>
+        <path class="steam s2" d="M20 40 q-6 -8 0 -16 q6 -8 0 -16"/>
+        <path class="steam s3" d="M34 40 q-6 -8 0 -16 q6 -8 0 -16"/>
+      </g>
+    </g>
+
+    <rect x="0.5" y="0.5" width="1199" height="379" rx="18" fill="none" stroke="#4cc9ff" stroke-opacity=".18"/>
+  </g>
+</svg>
